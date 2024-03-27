@@ -1,9 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gift Cards</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, #fbfbfb, #cddffb);
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+    .card-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap to the next line */
+        justify-content: center; /* Center the cards horizontally */
+        gap: 20px; /* Adjust the spacing between cards */
+        max-width: 1000px; /* Set a maximum width to contain the cards */
+    }
+
+    .card {
+        width: 200px; /* Adjust the width of each card */
+        height: 300px; /* Adjust the height of each card */
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2); /* Blue shadow */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid blue; /* Add border with 2px width and blue color */
+    }
+
+    .card img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 10px;
+        background-color: #fff;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+</style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/WhatsApp Image 2024-03-23 at 10.18.23.jpeg" alt="Gift Card Image">
+        <div class="card-content">
+            <h2>Appreciation Gift Card 1</h2>
+            <p>Thank you very much for your outstanding efforts</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/WhatsApp Image 2024-03-23 at 10.18.23.jpeg" alt="Gift Card Image">
+        <div class="card-content">
+            <h2>Appreciation Gift Card 2</h2>
+            <p>Thank you very much for your outstanding efforts</p>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="images/WhatsApp Image 2024-03-23 at 10.18.23.jpeg" alt="Gift Card Image">
+            <div class="card-content">
+                <h2>Appreciation Gift Card 1</h2>
+                <p>Thank you very much for your outstanding efforts</p>
+            </div>
+        </div>
+           
+        <div class="card">
+            <img src="images/WhatsApp Image 2024-03-23 at 10.18.23.jpeg" alt="Gift Card Image">
+            <div class="card-content">
+                <h2>Appreciation Gift Card 2</h2>
+                <p>Thank you very much for your outstanding efforts</p>
+            </div>
+        </div>
+        
+    
+</div>
+
+</body>
+</html>
